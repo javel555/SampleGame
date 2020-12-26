@@ -3,7 +3,7 @@ import * as THREE from 'https://unpkg.com/three@0.121.1/build/three.module.js';
 import { PointerLockControls } from 'https://unpkg.com/three@0.121.1/examples/jsm/controls/PointerLockControls.js';
 import { CSS2DObject } from 'https://unpkg.com/three@0.121.1/examples/jsm/renderers/CSS2DRenderer.js';
 
-import * as ProtoThree from "/src/ProtoThree/main.mjs";
+import * as ProtoThree from "./ProtoThree/main.mjs";
 
 // boot
 (()=>{
@@ -165,7 +165,7 @@ class Main extends ProtoThree.AbstractScene {
 
     const titleDom = document.createElement('div');
     titleDom.className = 'label';
-    titleDom.innerHTML = 'Shooting Game<br><br>click to start';
+    titleDom.innerHTML = 'Shooting Game<br><br>click to start<br><br>WASD: move<br>MouseMove: rotate<br>MouseClick: shot';
     titleDom.style.fontSize = '20px';
     titleDom.style.color = '#0080ff';
     titleDom.style.textAlign = 'center';
